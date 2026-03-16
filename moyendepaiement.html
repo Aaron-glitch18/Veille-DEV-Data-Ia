@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="culture_generale.css">
+    <title>Culture Générale</title>
+</head>
+<body>
+    <header>
+        <h1>ANALYSE ET VISUALISATION DES DONNEES </h1>
+    </header>
+    <main> 
+        <section id="container">
+            <div>
+                <div class="bloc">
+                    <p>Les moyens de paiement en ligne sont des technologies qui permettent d’effectuer des transactions financières via Internet, sans contact physique entre l’acheteur et le vendeur. Ils sont aujourd’hui essentiels pour les sites e-commerce, les plateformes de dons, les abonnements numériques et les applications mobiles. Grâce à ces solutions, un utilisateur peut payer un produit ou un service en utilisant une carte bancaire, un portefeuille électronique (wallet), un paiement mobile ou un service de transfert d’argent.</p>
+                    <br>
+                    <p> Il existe plusieurs catégories de paiement en ligne. Les plus courants sont les cartes bancaires (Visa, Mastercard, etc.), qui permettent d’effectuer des paiements via un formulaire sécurisé sur un site web. Les portefeuilles électroniques comme PayPal, Apple Pay ou Google Pay permettent aux utilisateurs de payer sans saisir leurs informations bancaires à chaque transaction. Dans certains pays, notamment en Afrique, les services de Mobile Money (paiement via téléphone mobile) sont très utilisés, car ils permettent de payer directement à partir d’un compte mobile. Enfin, certaines plateformes utilisent des passerelles de paiement spécialisées qui connectent les sites web aux systèmes bancaires.</p>
+                </div>
+                <h2>fonctionnement du paiement en ligne</h2>
+                <div class="bloc" id="text">
+                    <p>Le fonctionnement d’un paiement en ligne repose sur plusieurs acteurs : l’utilisateur (client), le commerçant (site web ou application), la passerelle de paiement et la banque. Lorsqu’un utilisateur décide de payer sur un site, il saisit ses informations de paiement ou choisit un moyen de paiement disponible. Le site envoie ensuite ces informations à une passerelle de paiement, qui sert d’intermédiaire sécurisé entre le site et les institutions financières. La passerelle vérifie la validité du paiement auprès de la banque ou du service financier de l’utilisateur. Si les fonds sont disponibles et que la transaction est validée, la banque autorise le paiement et renvoie une confirmation au site. Le commerçant peut alors finaliser la transaction et fournir le produit ou le service.</p>
+                </div>
+                <h2>API et passerelles de paiement</h2>
+                <div class="bloc" id="text">
+                    <p>
+                        Pour intégrer un paiement en ligne dans un site ou une application, les développeurs utilisent généralement des API de paiement fournies par des plateformes spécialisées. Ces API permettent d’envoyer des informations de transaction, d’ouvrir des interfaces de paiement sécurisées et de recevoir des notifications lorsque le paiement est réussi ou échoué. Les passerelles de paiement fournissent souvent des SDK ou des bibliothèques JavaScript qui facilitent l’intégration sur un site web. Elles gèrent également la sécurité, le chiffrement des données et la communication avec les banques.
+                    </p>
+                <h2 style="margin-bottom: 20px;">Les informations importantes pour les développeurs</h2>
+                    <p>
+                        Pour mettre en place un système de paiement en ligne, les développeurs doivent comprendre plusieurs éléments essentiels. Ils doivent savoir comment intégrer une API de paiement, gérer les requêtes et les réponses du serveur, et traiter les informations envoyées par la passerelle de paiement. Il est aussi important de gérer les callbacks ou webhooks, qui permettent au serveur de recevoir une confirmation de paiement directement depuis la plateforme de paiement. Ces confirmations servent généralement à enregistrer la transaction dans une base de données, activer un service ou afficher une page de confirmation à l’utilisateur.
+                    </p>
+                    
+                    <!-- <button id="btn">lire à haute voix</button><button id="stopread">Arrêter</button> -->
+                </div>
+                <h2>l'aspect sécurité</h2>
+                <br>                
+                <div class="bloc">
+                    <p>La sécurité est un élément central dans les systèmes de paiement en ligne. Les données financières doivent être protégées par des protocoles de chiffrement comme HTTPS et par des mécanismes d’authentification sécurisés. Les développeurs doivent éviter de stocker les informations sensibles des cartes bancaires sur leurs serveurs et utiliser les systèmes de tokenisation fournis par les passerelles de paiement. Il est également important de vérifier les transactions côté serveur afin d’éviter les fraudes ou les faux paiements.
+                    </p>
+                <h2 style="margin-bottom: 20px;">Gestion des transactions</h2>
+                <!-- <div class="bloc"> -->
+                    <p>
+                   L’importance de la gestion des transactions
+
+                Un bon système de paiement doit aussi gérer correctement les différents états d’une transaction : paiement réussi, paiement échoué, paiement en attente ou remboursement. Les développeurs doivent prévoir une gestion des erreurs et enregistrer les transactions dans une base de données afin de pouvoir suivre les paiements, résoudre les problèmes et fournir des rapports financiers. Cette gestion permet aussi d’améliorer l’expérience utilisateur et la fiabilité du système.</p>
+                </div>
+                </div>
+                
+                <!-- <br>
+                <h2>Microsoft Power BI</h2>
+                <div class="bloc">
+                    <div>
+                        <p>
+                            De même, Microsoft Power BI est un outil puissant d’analyse et de visualisation, particulièrement intégré à l’environnement Microsoft. Il est largement utilisé en finance, en gestion de projet et dans l’analyse de performance. 
+                            Sa portée permet la création de rapports dynamiques connectés à diverses sources de données. Cependant, certaines fonctionnalités avancées nécessitent une licence payante. 
+                            Son avantage réside dans son intégration efficace avec des outils comme Excel et dans son aspect professionnel.                        </p>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+            </section> 
+    </main>
+</body>
+<!-- <script>
+    const btn = document.getElementById('btn');
+    const text = document.getElementById('text').innerText;
+    const speech = new SpeechSynthesisUtterance(text);
+    const stopbtn=document.getElementById('stopread');
+        window.speechSynthesis.speak(speech);
+    stopbtn.addEventListener('click',() =>{
+        window.speechSynthesis.cancel(speech);
+    })
+    Speech
+</script> -->
+</html>
+
